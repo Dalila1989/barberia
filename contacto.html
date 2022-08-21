@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto</title>,
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="prodstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="caja">
+                <h1><img src="logo.png" alt="logo"></h1>
+                <nav>
+            
+                    <ul>
+                        <li><a href="file:///C:/Users/ccardoso/OneDrive%20-%20ALSEA/Escritorio/programacion/opciones/index.html">inicio</a></li>
+                        <li><a href="file:///C:/Users/ccardoso/OneDrive%20-%20ALSEA/Escritorio/programacion/opciones/opciones.html">productos</a></li>
+                        <li> <a href="file:///C:/Users/ccardoso/OneDrive%20-%20ALSEA/Escritorio/programacion/opciones/contacto.html">contacto</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <form>
+                <label for="nombreyapellido">Nombre y apellido</label>
+                <input type="text" id="nombreyapellido" class="input-padron" required>
+
+                <label for="correoelectronico">Correo electronico</label>
+                <input type="email" id="correoelectronico" class="input-padron" placeholder="dom@barberia.com" required>
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" placeholder="(xx) xxxxxxxx">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="80" rows="10" id="mensaje"> </textarea>
+
+                <fieldset>
+
+                  <legend>Como le gustaria que lo contactaramos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email" checked>Email </label>
+                                        
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">telefono </label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp">whatsapp </label>
+                                    
+                </fieldset>    
+                
+                <fieldset>
+                    <legend>En que horario prefiere ser contactado?</legend>
+                        <select>
+                            <option> - </option>
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                            <option>Noche</option>
+                        </select>
+                </fieldset>
+                <label><input type="checkbox" class="checkbox">Le gustaria recibir novedades por mail?</label>
+               
+                <input type="submit" class="enviar" value="Enviar formulario">
+            
+
+            </form> 
+            <table> 
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8hs a 12hs</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>8hs a 12hs</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>12hs a 20hs</td>
+                    </tr>
+                </tbody>
+            </table>    
+            
+
+        </main>      
+        <footer>
+            <img src="logo-blanco.png">
+            <p class="copyright">&copy copyright 2020</p>
+
+        </footer>
+    </body>
+
+</html>
